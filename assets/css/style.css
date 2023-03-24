@@ -1,0 +1,33 @@
+:root {
+    --border: 1px solid black;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(157, 157, 218);
+}
+
+header {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border: var(--border);
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    border: var(--border);
+}
+
+header section ul {
+    display: flex;
+    text-align: center;
+    border: var(--border);
+}
+
+header section ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+
