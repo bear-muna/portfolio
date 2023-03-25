@@ -12,24 +12,24 @@ header {
     padding: 15px;
     justify-content: space-between;
     border: var(--border);
-
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 60px;
     font-weight: 700;
     border: var(--border);
 }
 
 header section ul {
     display: flex;
-    text-align: center;
+    /* text-align: center; */
     border: var(--border);
 }
 
 header section ul li {
     list-style-type: none;
-    margin: 5px;
+    margin: 10px;
+    font-size: 32px;
 }
 
 main {
@@ -53,7 +53,7 @@ main {
     bottom: 10%;
     right: 5%;
     text-align: center;
-    
+    font-size: 32px;
 }
 
 #self {
@@ -74,6 +74,7 @@ main {
 #self #about-me h2 {
     border: var(--border);
     margin: auto;
+    font-size: 60px;
 }
 
 #self #description {
@@ -89,3 +90,80 @@ main {
     margin: 2% 0;
 }
 
+#work {
+     border: var(--border);
+     height: 700px;
+     display: flex;
+}
+
+#work #work-title {
+    border: var(--border);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-basis: 25%;
+}
+
+#work #work-title h2 {
+    border: var(--border);
+    /* margin-top: 10%; */
+    /* margin-bottom: 650px; */
+    font-size: 60px;
+    padding-top: 10%;
+}
+
+/* TODO: Work on making cards fit into container */
+
+#work #showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin: 1%; */
+}
+
+#work #showcase .cards {
+    height: 190px;
+    width: 45%;
+    border: var(--border);
+    /* flex: 1; */
+}
+
+#work #showcase #best-work {
+    width: 90%;
+    /* flex: 2; */
+}
+
+/* TODO: Fix footer with sections and margins */
+
+footer {
+    border: var(--border);
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+#contact-info {
+    border: var(--border);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    /* margin: 0; */
+}
+
+#contact-info p {
+    border: var(--border);
+    margin: auto;
+    font-size: 60px;
+}
+
+#links ul {
+    display: flex;
+    /* text-align: center; */
+    border: var(--border);
+}
+
+#links ul li {
+    list-style-type: none;
+    margin: 10px;
+    font-size: 32px;
+}
