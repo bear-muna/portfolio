@@ -56,4 +56,36 @@ main {
     
 }
 
+#self {
+    border: var(--border);
+    display: flex;
+    height: 200px;
+
+}
+
+#self #about-me {
+    border: var(--border);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#self #about-me h2 {
+    border: var(--border);
+    margin: auto;
+}
+
+#self #description {
+    border: var(--border);
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#self #description p {
+    border: var(--border);
+    width: 85%;
+    margin: 2% 0;
+}
 
