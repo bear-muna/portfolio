@@ -2,18 +2,19 @@
     --border: 1px solid black;
     --background: rgb(157, 157, 218);
     --secondary-back: rgb(155, 149, 149);
+    --main-back: rgb(236, 236, 207);
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background);
+    background-color: var(--main-back);
 }
 
 header {
     display: flex;
     padding: 15px 5% 15px 0px;
     justify-content: space-between;
-    border: var(--border);
+    /* border: var(--border); */
     background-color: var(--secondary-back);
     flex-wrap: wrap;
 }
@@ -23,6 +24,7 @@ header h1 {
     font-weight: 700;
     /* border: var(--border); */
     padding-left: 5%;
+    background: var(--background);
 }
 
 header section {
@@ -55,7 +57,7 @@ header section ul li a {
 }
 
 main {
-
+    background: var(--main-back);
 }
 
 #background {
@@ -63,47 +65,59 @@ main {
     height: 150px;
     width: 100%;
     /* margin: 0px 5px; */
-    border: var(--border);
+    /* border: var(--border); */
 }
 
 #background h2 {
     position: absolute;
     border: var(--border);
     display: inline-block;
-    height: 20%;
-    width: 10%;
+    height: 25%;
+    width: 20%;
     bottom: 10%;
     right: 5%;
     text-align: center;
     font-size: 32px;
 }
 
+hr {
+    /* height: 3px; */
+    /* border-radius: 10%; */
+    /* width: 3px; */
+    color: var(--background);
+    border-width: 2px;
+    border-color: var(--background);
+    border-radius: 2px;
+}
+
+/* About Me Section */
+
 #self {
-    border: var(--border);
+    /* border: var(--border); */
     display: flex;
     height: 200px;
-
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #self #about-me {
-    border: var(--border);
-    width: 25%;
+    /* border: var(--border); */
+    width: 24%;
     display: flex;
     justify-content: center;
 
 }
 
 #self #about-me h2 {
-    border: var(--border);
+    /* border: var(--border); */
     margin: auto;
     font-size: 60px;
+    /* flex-wrap: wrap; */
 }
 
-/* TODO: Make only the Description have the height value */
-
 #self #description {
-    border: var(--border);
-    width: 75%;
+    /* border: var(--border); */
+    width: 74%;
     display: flex;
     justify-content: center;
 }
@@ -112,6 +126,7 @@ main {
     border: var(--border);
     width: 85%;
     margin: 2% 0;
+    font-size: 24px;
 }
 
 #work {
@@ -153,6 +168,7 @@ main {
     width: 45%;
     border: var(--border);
     /* flex: 1; */
+    /* position: relative; */
 }
 
 #work #showcase #best-work {
@@ -160,10 +176,25 @@ main {
     /* flex: 2; */
 }
 
+#work .tab {
+    border: var(--border);
+    display: inline-block;
+    /* position: absolute; */
+    position: relative;
+    top: 50%;
+    background: var(--background);
+    margin-left: 0px;
+}
+
+.tab p {
+    background: transparent;
+    font-weight: 300;
+}
+
 /* TODO: Fix footer with sections and margins */
 
 footer {
-    border: var(--border);
+    /* border: var(--border); */
     display: flex;
     height: 175px;
     /* padding: 15px; */
@@ -173,8 +204,8 @@ footer {
 
 /* Contact info header for left side */
 #contact-info {
-    border: var(--border);
-    width: 25%;
+    /* border: var(--border); */
+    width: 24%;
     display: flex;
     justify-content: center;
     /* margin: 0; */
@@ -182,7 +213,7 @@ footer {
 }
 
 #contact-info p {
-    border: var(--border);
+    /* border: var(--border); */
     margin: auto;
     font-size: 60px;
 }
@@ -198,7 +229,7 @@ footer {
 #links ul {
     display: flex;
     
-    border: var(--border);
+    /* border: var(--border); */
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
@@ -210,9 +241,13 @@ footer {
     list-style-type: none;
     /* margin: 10px; */
     font-size: 32px;
-    border: var(--border);
+    /* border: var(--border); */
     justify-content: space-around;
     margin: auto;
     /* text-align: center; */
     /* padding: 3% 0; */
+}
+
+#links ul li a {
+    background: transparent;
 }
