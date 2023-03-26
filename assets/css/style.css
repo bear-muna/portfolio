@@ -1,35 +1,57 @@
 :root {
     --border: 1px solid black;
+    --background: rgb(157, 157, 218);
+    --secondary-back: rgb(155, 149, 149);
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(157, 157, 218);
+    background-color: var(--background);
 }
 
 header {
     display: flex;
-    padding: 15px;
+    padding: 15px 5% 15px 0px;
     justify-content: space-between;
     border: var(--border);
+    background-color: var(--secondary-back);
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-size: 60px;
     font-weight: 700;
-    border: var(--border);
+    /* border: var(--border); */
+    padding-left: 5%;
+}
+
+header section {
+    width: 40%;
+    height: 80%;
+    background: var(--secondary-back);
 }
 
 header section ul {
+    background: var(--secondary-back);
     display: flex;
     /* text-align: center; */
-    border: var(--border);
+    /* border: var(--border); */
+    justify-content: space-around;
+    /* font-weight: 200; */
 }
 
 header section ul li {
+    background: var(--secondary-back);
+    /* color: var(--secondary-back); */
     list-style-type: none;
+    /* font-weight: 200; */
     margin: 10px;
     font-size: 32px;
+    /* border: var(--border); */
+}
+
+header section ul li a {
+    background-color: transparent;
 }
 
 main {
@@ -77,6 +99,8 @@ main {
     font-size: 60px;
 }
 
+/* TODO: Make only the Description have the height value */
+
 #self #description {
     border: var(--border);
     width: 75%;
@@ -96,6 +120,8 @@ main {
      display: flex;
 }
 
+/* Header should only take up space it needs, not the height of the entire container */
+
 #work #work-title {
     border: var(--border);
     width: 25%;
@@ -113,6 +139,7 @@ main {
 }
 
 /* TODO: Work on making cards fit into container */
+/* TODO: Make only the showcase have the height of the entire container */
 
 #work #showcase {
     display: flex;
@@ -138,16 +165,20 @@ main {
 footer {
     border: var(--border);
     display: flex;
-    padding: 15px;
+    height: 175px;
+    /* padding: 15px; */
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+/* Contact info header for left side */
 #contact-info {
     border: var(--border);
     width: 25%;
     display: flex;
     justify-content: center;
     /* margin: 0; */
+    /* flex-wrap: wrap; */
 }
 
 #contact-info p {
@@ -156,14 +187,32 @@ footer {
     font-size: 60px;
 }
 
+/* Links located on the right side */
+#links {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    width: 74%
+} 
+
 #links ul {
     display: flex;
-    /* text-align: center; */
+    
     border: var(--border);
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 #links ul li {
+    display: flex;
+    flex: 1;
     list-style-type: none;
-    margin: 10px;
+    /* margin: 10px; */
     font-size: 32px;
+    border: var(--border);
+    justify-content: space-around;
+    margin: auto;
+    /* text-align: center; */
+    /* padding: 3% 0; */
 }
