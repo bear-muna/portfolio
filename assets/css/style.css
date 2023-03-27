@@ -62,10 +62,23 @@ main {
 
 #background {
     position: relative;
-    height: 150px;
+    height: 200px;
     width: 100%;
     /* margin: 0px 5px; */
     /* border: var(--border); */
+    /* background-size:contain; */
+    /* background-position: center; */
+    /* z-index: -1; */
+    /* background: transparent; */
+    background-image: url('../images/Snowy\ Forest\ .jpg');
+    background-position: top;
+}
+
+#background img {
+    /* width: stretch; */
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
 }
 
 #background h2 {
@@ -88,6 +101,7 @@ hr {
     border-width: 2px;
     border-color: var(--background);
     border-radius: 2px;
+    /* z-index: 1; */
 }
 
 /* About Me Section */
@@ -98,6 +112,7 @@ hr {
     height: 200px;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* z-index: 1; */
 }
 
 #self #about-me {
@@ -124,7 +139,7 @@ hr {
 
 #self #description p {
     border: var(--border);
-    width: 85%;
+    width: 95%;
     margin: 2% 0;
     font-size: 24px;
 }
@@ -133,6 +148,7 @@ hr {
      border: var(--border);
      height: 800px;
      display: flex;
+     flex-wrap: wrap;
 }
 
 /* Header should only take up space it needs, not the height of the entire container */
@@ -194,11 +210,18 @@ hr {
     height: 20%;
 }
 
-.tab p {
-    background: var(--background);
-    font-weight: 300;
-    padding: 7px;
+.tab h3 {
+    font-weight: 600;
+    font-size: 24px;
 }
+
+.tab p, .tab h3 {
+    background: var(--background);
+    /* font-weight: 400; */
+    padding: 6px;
+}
+
+.tab 
 
 /* TODO: Fix footer with sections and margins */
 
