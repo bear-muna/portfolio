@@ -1,14 +1,21 @@
 :root {
     --border: 1px solid black;
     --background: rgb(157, 157, 218);
-    --secondary-back: rgb(155, 149, 149);
+    --secondary-back: rgb(201, 197, 209);
     --main-back: rgb(231, 231, 221);
+    --dark-back: rgb(81, 81, 114);
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--main-back);
 }
+
+h2 {
+    color: var(--dark-back);
+}
+
+/* Change color scheme of header */
 
 header {
     display: flex;
@@ -23,8 +30,9 @@ header h1 {
     font-size: 60px;
     font-weight: 700;
     /* border: var(--border); */
-    padding-left: 5%;
+    padding: 0 1% 0 5%;
     background: var(--background);
+    color: var(--main-back);
 }
 
 header section {
@@ -74,32 +82,26 @@ main {
     background-position: top;
 }
 
-#background img {
-    /* width: stretch; */
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-}
-
 #background h2 {
     position: absolute;
-    border: var(--border);
+    /* border: var(--border); */
     display: inline-block;
     height: 25%;
-    width: 20%;
+    width: 15%;
     bottom: 10%;
     right: 5%;
     text-align: center;
     font-size: 32px;
+    background: var(--secondary-back);
 }
 
 hr {
     /* height: 3px; */
     /* border-radius: 10%; */
     /* width: 3px; */
-    color: var(--background);
+    color: var(--dark-back);
     border-width: 2px;
-    border-color: var(--background);
+    border-color: var(--dark-back);
     border-radius: 2px;
     /* z-index: 1; */
 }
@@ -123,11 +125,9 @@ hr {
 
 }
 
-#self #about-me h2 {
-    /* border: var(--border); */
+.aside-header {
     margin: auto;
     font-size: 60px;
-    /* flex-wrap: wrap; */
 }
 
 #self #description {
@@ -145,7 +145,7 @@ hr {
 }
 
 #work {
-     border: var(--border);
+     /* border: var(--border); */
      height: 800px;
      display: flex;
      flex-wrap: wrap;
@@ -154,19 +154,11 @@ hr {
 /* Header should only take up space it needs, not the height of the entire container */
 
 #work #work-title {
-    border: var(--border);
+    /* border: var(--border); */
     width: 24%;
     display: flex;
     justify-content: center;
     /* flex-basis: 25%; */
-}
-
-#work #work-title h2 {
-    border: var(--border);
-    /* margin-top: 10%; */
-    /* margin-bottom: 650px; */
-    font-size: 60px;
-    padding-top: 10%;
 }
 
 /* TODO: Work on making cards fit into container */
@@ -219,16 +211,14 @@ hr {
     background: var(--background);
     /* font-weight: 400; */
     padding: 6px;
-}
-
-.tab 
+} 
 
 /* TODO: Fix footer with sections and margins */
 
 footer {
     /* border: var(--border); */
     display: flex;
-    height: 175px;
+    height: 150px;
     /* padding: 15px; */
     justify-content: space-between;
     flex-wrap: wrap;
@@ -244,18 +234,12 @@ footer {
     /* flex-wrap: wrap; */
 }
 
-#contact-info p {
-    /* border: var(--border); */
-    margin: auto;
-    font-size: 60px;
-}
-
 /* Links located on the right side */
 #links {
     display: flex;
     justify-content: center;
     /* text-align: center; */
-    width: 74%
+    width: 74%;
 } 
 
 #links ul {
@@ -269,7 +253,7 @@ footer {
 
 #links ul li {
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     list-style-type: none;
     /* margin: 10px; */
     font-size: 32px;
