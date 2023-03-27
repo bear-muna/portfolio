@@ -2,7 +2,7 @@
     --border: 1px solid black;
     --background: rgb(157, 157, 218);
     --secondary-back: rgb(155, 149, 149);
-    --main-back: rgb(236, 236, 207);
+    --main-back: rgb(231, 231, 221);
 }
 
 * {
@@ -131,7 +131,7 @@ hr {
 
 #work {
      border: var(--border);
-     height: 700px;
+     height: 800px;
      display: flex;
 }
 
@@ -139,10 +139,10 @@ hr {
 
 #work #work-title {
     border: var(--border);
-    width: 25%;
+    width: 24%;
     display: flex;
     justify-content: center;
-    flex-basis: 25%;
+    /* flex-basis: 25%; */
 }
 
 #work #work-title h2 {
@@ -159,36 +159,45 @@ hr {
 #work #showcase {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 74%;
+    /* text-align: center; */
     /* margin: 1%; */
 }
 
 #work #showcase .cards {
-    height: 190px;
+    height: 200px;
     width: 45%;
-    border: var(--border);
-    /* flex: 1; */
+    border: 8px solid var(--background);
+    border-radius: 10px;
+    /* flex: 2; */
     /* position: relative; */
 }
 
 #work #showcase #best-work {
-    width: 90%;
-    /* flex: 2; */
+    width: 95%;
+    /* flex: 1; */
 }
 
 #work .tab {
-    border: var(--border);
+    /* border: var(--border); */
     display: inline-block;
     /* position: absolute; */
     position: relative;
     top: 50%;
-    background: var(--background);
-    margin-left: 0px;
+    right: 5px;
+    /* background: var(--background); */
+    /* margin-left: 0px; */
+    /* flex-direction: column; */
+    /* justify-content: start; */
+    /* text-align: start; */
+    height: 20%;
 }
 
 .tab p {
-    background: transparent;
+    background: var(--background);
     font-weight: 300;
+    padding: 7px;
 }
 
 /* TODO: Fix footer with sections and margins */
