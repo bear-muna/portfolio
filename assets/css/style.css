@@ -4,6 +4,7 @@
     --secondary-back: rgb(201, 197, 209);
     --main-back: rgb(231, 231, 221);
     --dark-back: rgb(81, 81, 114);
+    --contrast: rgb(158, 136, 12);
 }
 
 * {
@@ -21,40 +22,37 @@ header {
     display: flex;
     padding: 15px 5% 15px 0px;
     justify-content: space-between;
-    /* border: var(--border); */
-    background-color: var(--secondary-back);
+    background-color: var(--dark-back);
     flex-wrap: wrap;
+    /* border: var(--border); */
 }
 
 header h1 {
     font-size: 60px;
     font-weight: 700;
-    /* border: var(--border); */
     padding: 0 1% 0 5%;
-    background: var(--background);
-    color: var(--main-back);
+    background: var(--main-back);
+    color: var(--background);
+    border-radius: 0 10px 10px 0;
+    /* border: var(--border); */
 }
 
 header section {
     width: 40%;
     height: 80%;
-    background: var(--secondary-back);
+    background: var(--dark-back);
 }
 
 header section ul {
-    background: var(--secondary-back);
+    background: var(--dark-back);
     display: flex;
-    /* text-align: center; */
-    /* border: var(--border); */
     justify-content: space-around;
-    /* font-weight: 200; */
+    /* border: var(--border); */
 }
 
 header section ul li {
-    background: var(--secondary-back);
-    /* color: var(--secondary-back); */
+    background: var(--dark-back);
     list-style-type: none;
-    /* font-weight: 200; */
     margin: 10px;
     font-size: 32px;
     /* border: var(--border); */
@@ -64,64 +62,61 @@ header section ul li a {
     background-color: transparent;
 }
 
+header section ul li a:visited, 
+header section ul li a:link {
+    color: var(--background);
+}
+
 main {
     background: var(--main-back);
 }
 
 #background {
     position: relative;
-    height: 200px;
+    height: 350px;
     width: 100%;
-    /* margin: 0px 5px; */
-    /* border: var(--border); */
-    /* background-size:contain; */
-    /* background-position: center; */
-    /* z-index: -1; */
-    /* background: transparent; */
     background-image: url('../images/Snowy\ Forest\ .jpg');
     background-position: top;
+    background-size: cover;
+    /* border: var(--border); */
 }
 
 #background h2 {
     position: absolute;
-    /* border: var(--border); */
     display: inline-block;
-    height: 25%;
+    height: 35px;
     width: 15%;
     bottom: 10%;
     right: 5%;
     text-align: center;
     font-size: 32px;
     background: var(--secondary-back);
+    /* border: var(--border); */
 }
 
 hr {
-    /* height: 3px; */
-    /* border-radius: 10%; */
-    /* width: 3px; */
     color: var(--dark-back);
     border-width: 2px;
     border-color: var(--dark-back);
     border-radius: 2px;
-    /* z-index: 1; */
+    /* border-radius: 10%; */
 }
 
 /* About Me Section */
 
 #self {
-    /* border: var(--border); */
     display: flex;
     height: 200px;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* z-index: 1; */
+    /* border: var(--border); */
 }
 
 #self #about-me {
-    /* border: var(--border); */
     width: 24%;
     display: flex;
     justify-content: center;
+    /* border: var(--border); */
 
 }
 
@@ -131,10 +126,10 @@ hr {
 }
 
 #self #description {
-    /* border: var(--border); */
     width: 74%;
     display: flex;
     justify-content: center;
+    /* border: var(--border); */
 }
 
 #self #description p {
@@ -142,64 +137,49 @@ hr {
     width: 95%;
     margin: 2% 0;
     font-size: 24px;
+    /* border: var(--border); */
 }
 
 #work {
-     /* border: var(--border); */
-     height: 800px;
-     display: flex;
-     flex-wrap: wrap;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: var(--border); */
 }
 
-/* Header should only take up space it needs, not the height of the entire container */
-
 #work #work-title {
-    /* border: var(--border); */
     width: 24%;
     display: flex;
     justify-content: center;
-    /* flex-basis: 25%; */
+    /* border: var(--border); */
 }
-
-/* TODO: Work on making cards fit into container */
-/* TODO: Make only the showcase have the height of the entire container */
 
 #work #showcase {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 74%;
-    /* text-align: center; */
-    /* margin: 1%; */
 }
 
 #work #showcase .cards {
     height: 200px;
     width: 45%;
-    border: 8px solid var(--background);
     border-radius: 10px;
-    /* flex: 2; */
-    /* position: relative; */
+    opacity: 0.75;
+    border: 8px solid var(--background);
 }
 
 #work #showcase #best-work {
     width: 95%;
-    /* flex: 1; */
 }
 
 #work .tab {
-    /* border: var(--border); */
     display: inline-block;
-    /* position: absolute; */
     position: relative;
     top: 50%;
     right: 5px;
-    /* background: var(--background); */
-    /* margin-left: 0px; */
-    /* flex-direction: column; */
-    /* justify-content: start; */
-    /* text-align: start; */
     height: 20%;
+    /* border: var(--border); */
 }
 
 .tab h3 {
@@ -209,59 +189,85 @@ hr {
 
 .tab p, .tab h3 {
     background: var(--background);
-    /* font-weight: 400; */
     padding: 6px;
 } 
+
+#best-work {
+    background-image: url("../images/Ocean1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#work-2 {
+    background-image: url(../images/Mountain.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#work-3 {
+    background-image: url(../images/juijitsu.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#work-4 {
+    background-image: url(../images/cyberpunk-city.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#work-5 {
+    background-image: url(../images/earth.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cards:hover {
+    opacity: 1.0 !important;
+}
+
+
 
 /* TODO: Fix footer with sections and margins */
 
 footer {
-    /* border: var(--border); */
     display: flex;
     height: 150px;
-    /* padding: 15px; */
     justify-content: space-between;
     flex-wrap: wrap;
+    /* border: var(--border); */
 }
 
 /* Contact info header for left side */
 #contact-info {
-    /* border: var(--border); */
     width: 24%;
     display: flex;
     justify-content: center;
-    /* margin: 0; */
-    /* flex-wrap: wrap; */
+    /* border: var(--border); */
 }
 
 /* Links located on the right side */
 #links {
     display: flex;
     justify-content: center;
-    /* text-align: center; */
     width: 74%;
 } 
 
 #links ul {
     display: flex;
-    
-    /* border: var(--border); */
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
+    /* border: var(--border); */
 }
 
 #links ul li {
     display: flex;
-    /* flex: 1; */
     list-style-type: none;
-    /* margin: 10px; */
     font-size: 32px;
-    /* border: var(--border); */
     justify-content: space-around;
     margin: auto;
-    /* text-align: center; */
-    /* padding: 3% 0; */
+    /* border: var(--border); */
 }
 
 #links ul li a {
