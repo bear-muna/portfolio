@@ -234,9 +234,18 @@ hr {
     background-size: cover;
 }
 
+.cards:link,
+.cards:visited {
+    color: var(--dark-back);
+}
+
 .cards:hover, 
 .cards:focus {
     opacity: 1.0 !important;
+}
+
+.cards:active {
+    color: var(--main-back);
 }
 
 footer {
@@ -300,7 +309,11 @@ footer {
 @media screen and (max-width: 576px) {
     
     header {
-        height: 200px;
+        height: 175px;
+    }
+
+    header h1 {
+        margin: center;
     }
 
     header section {
@@ -314,7 +327,7 @@ footer {
     }
 
     hr {
-
+        margin: 2%;
     }
 
     #self, 
@@ -324,17 +337,59 @@ footer {
     #self #description p {
         width: 100%;
         height: fit-content;
+        /* margin: 0 5px; */
         /* flex-direction: column; */
         /* text-align: center; */
     }
 
+    #self,
     #self #description {
         flex-direction: column;
         text-align: center;
     }
 
+    #self #description p {
+        width: 90%;
+        font-size: 16px;
+        margin: auto;
+    }
+
     #self #profile-picture {
         width: 90%;
         height: 180px;
+        margin: auto;
+    }
+
+    #work,
+    #work #work-title,
+    #work #showcase {
+        width: 100%;
+        height: fit-content;
+    }
+
+    #work {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #work #showcase {
+        width: 95%;
+        margin: auto;
+    }
+
+    #work .tab {
+
+    }
+
+    footer,
+    footer #contact-info,
+    footer #links {
+        width: 100%;
+        height: fit-content;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
