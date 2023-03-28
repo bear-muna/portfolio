@@ -38,7 +38,7 @@ header h1 {
 }
 
 header section {
-    width: 40%;
+    width: 60%;
     height: 80%;
     background: var(--dark-back);
 }
@@ -85,7 +85,7 @@ main {
     position: absolute;
     display: inline-block;
     height: 35px;
-    width: 15%;
+    width: 20%;
     bottom: 10%;
     right: 5%;
     text-align: center;
@@ -102,13 +102,18 @@ hr {
     /* border-radius: 10%; */
 }
 
+.aside-header {
+    margin: auto;
+    font-size: 60px;
+}
+
 /* About Me Section */
 
 #self {
     display: flex;
-    height: 200px;
+    height: 500px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     /* border: var(--border); */
 }
 
@@ -120,21 +125,28 @@ hr {
 
 }
 
-.aside-header {
-    margin: auto;
-    font-size: 60px;
-}
 
 #self #description {
     width: 74%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     /* border: var(--border); */
+}
+
+#profile-picture {
+    width: 45%;
+    border: 8px solid var(--background);
+    border-radius: 10px;
+    margin: 2% 0;
+
+    background-image: url("../images/profile-picture.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 #self #description p {
     border: var(--border);
-    width: 95%;
+    width: 45%;
     margin: 2% 0;
     font-size: 24px;
     /* border: var(--border); */
@@ -199,30 +211,31 @@ hr {
 }
 
 #work-2 {
-    background-image: url(../images/Mountain.jpg);
+    background-image: url("../images/Mountain.jpg");
     background-position: center;
     background-size: cover;
 }
 
 #work-3 {
-    background-image: url(../images/juijitsu.jpg);
+    background-image: url("../images/juijitsu.jpg");
     background-position: center;
     background-size: cover;
 }
 
 #work-4 {
-    background-image: url(../images/cyberpunk-city.jpg);
+    background-image: url("../images/cyberpunk-city.jpg");
     background-position: center;
     background-size: cover;
 }
 
 #work-5 {
-    background-image: url(../images/earth.jpg);
+    background-image: url("../images/earth.jpg");
     background-position: center;
     background-size: cover;
 }
 
-.cards:hover {
+.cards:hover, 
+.cards:focus {
     opacity: 1.0 !important;
 }
 
@@ -272,4 +285,9 @@ footer {
 
 #links ul li a {
     background: transparent;
+}
+
+#links ul li a:link,
+#links ul li a:visited {
+    color: var(--dark-back);
 }
