@@ -144,11 +144,13 @@ hr {
 
 #self #description p {
     width: 45%;
-    margin: 2% 0;
-    padding: 2% 0;
-    font-size: 24px;
+    /* margin: 2% 0; */
+    /* padding: 2% 0; */
+    font-size: 20px;
     display: flex;
+    flex-direction: column;
     text-align: justify;
+    justify-content: center;
     /* border: var(--border); */
 }
 
@@ -297,12 +299,40 @@ footer {
 
 /* Desktop */
 @media screen and (max-width: 992px) {
+    
+    #self #profile-picture,
+    #self #description p {
+        font-size: 16px;
+    }
 
+    header section {
+        width: 50%;
+    }
 }
 
 /* Large smartphones */
 @media screen and (max-width: 768px) {
 
+    header section {
+        width: 50%;
+    }
+
+    #background h2 {
+        width: 40%;
+    }
+
+    #self #description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #self #profile-picture,
+    #self #description p {
+        width: 95%;
+        height: 45%;
+        font-size: 16px;
+        margin: auto;
+    }
 }
 
 /* Smaller smartphones */
@@ -337,9 +367,6 @@ footer {
     #self #description p {
         width: 100%;
         height: fit-content;
-        /* margin: 0 5px; */
-        /* flex-direction: column; */
-        /* text-align: center; */
     }
 
     #self,
