@@ -21,6 +21,6 @@
     Please refer to the LICENSE in the repo.
 
 ## Links
-    Website: https://bear-muna.github.io/second-challenge/ 
+    Website: https://bear-muna.github.io/portfolio/ 
 
-    Repository: https://github.com/bear-muna/second-challenge
+    Repository: https://github.com/bear-muna/portfolio
